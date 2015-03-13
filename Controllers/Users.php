@@ -32,9 +32,14 @@ class Users extends Controller {
     }
 
     public function view() {
-        $id = $this->getRequest()->getParam('id');
+//        $id = $this->getRequest()->getParam('id');
+//
+//        return $this->getApp()->UserModel->getUserById($id);
+        \ANSR\Propel\OrmConfig::connect();
+        $authors = \ANSR\Propel\Entity\AuthorQuery::create()
+            ->find();
 
-        return $this->getApp()->UserModel->getUserById($id);
+        return $authors->toArray();
     }
 
     public function edit() {

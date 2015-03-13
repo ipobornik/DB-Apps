@@ -25,7 +25,7 @@ ini_set('display_errors', 1);
 define('ROOT', __DIR__ . DIRECTORY_SEPARATOR);
 include 'Autoload/DefaultLoader.php';
 Autoload\DefaultLoader::registerAutoload();
-
+require_once 'Propel/index.php';
 $__router = '\ANSR\Routing\DefaultRouter';
 
 /**
@@ -61,6 +61,6 @@ $__router
 
 
 
-\ANSR\Library\Registry\Registry::set('WEB_SERVICE', false);
+\ANSR\Library\Registry\Registry::set('WEB_SERVICE', true);
 
 \ANSR\Library\DependencyContainer\AppStarter::createApp('MySQLi_Procedural', 'DefaultRouter', 'development');
