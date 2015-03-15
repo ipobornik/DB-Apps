@@ -1,25 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<database name="bookstore" defaultIdMethod="native" namespace="ANSR\Propel\Entity">
-  <table name="book" phpName="Book">
+<database name="supermarkets_chain" defaultIdMethod="native" namespace="ANSR\Propel\Entity">
+  <table name="expences" phpName="Expence">
     <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true"/>
-    <column name="title" type="varchar" size="255" required="true" />
-    <column name="isbn" type="varchar" size="24" required="true" phpName="ISBN"/>
-    <column name="publisher_id" type="integer" required="true"/>
-    <column name="author_id" type="integer" required="true"/>
-    <foreign-key foreignTable="publisher" phpName="Publisher" refPhpName="Book">
-      <reference local="publisher_id" foreign="id"/>
-    </foreign-key>
-    <foreign-key foreignTable="author">
-      <reference local="author_id" foreign="id"/>
+    <column name="name" type="varchar" size="255" required="true" />
+    <column name="created_on" type="Timestamp" required="true"/>
+    <column name="vendor_id" type="integer" required="true"/>
+    <foreign-key foreignTable="vendors" phpName="Vendor" refPhpName="Expence">
+      <reference local="vendor_id" foreign="id"/>
     </foreign-key>
   </table>
-  <table name="author" phpName="Author">
+    <table name="products" phpName="Product">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="name" type="varchar" size="128" required="true" />
+        <column name="tax" type="integer" required="true"/>
+        <column name="vendor_id" type="integer" required="true"/>
+        <column name="measure_id" type="integer" required="true"/>
+        <foreign-key foreignTable="vendors" phpName="Vendor" refPhpName="Product">
+            <reference local="vendor_id" foreign="id"/>
+        </foreign-key>
+        <foreign-key foreignTable="measures" phpName="Measure" refPhpName="Product">
+            <reference local="measure_id" foreign="id"/>
+        </foreign-key>
+    </table>
+  <table name="vendors" phpName="Vendor">
     <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true"/>
-    <column name="first_name" type="varchar" size="128" required="true"/>
-    <column name="last_name" type="varchar" size="128" required="true"/>
+    <column name="name" type="varchar" size="128" required="true"/>
   </table>
-  <table name="publisher" phpName="Publisher">
+  <table name="measures" phpName="Measure">
    <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
    <column name="name" type="varchar" size="128" required="true" />
   </table>
+    <table name="sales" phpName="Sale">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="sold_on" type="Timestamp" required="true" />
+        <column name="quantity" type="integer" required="true"/>
+        <column name="price_per_unit" type="integer" required="true"/>
+        <column name="cost" type="integer" required="true"/>
+        <column name="supermarket_id" type="integer" required="true"/>
+        <column name="product_id" type="integer" required="true"/>
+        <foreign-key foreignTable="products" phpName="Product" refPhpName="Sale">
+            <reference local="product_id" foreign="id"/>
+        </foreign-key>
+        <foreign-key foreignTable="supermarkets" phpName="Supermarket" refPhpName="Sale">
+            <reference local="supermarket_id" foreign="id"/>
+        </foreign-key>
+    </table>
+    <table name="supermarkets" phpName="Supermarket">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="name" type="varchar" size="128" required="true" />
+        <column name="town_id" type="integer" required="true"/>
+        <foreign-key foreignTable="towns" phpName="Town" refPhpName="Supermarket">
+            <reference local="town_id" foreign="id"/>
+        </foreign-key>
+    </table>
+    <table name="towns" phpName="Town">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+        <column name="name" type="varchar" size="128" required="true" />
+    </table>
 </database>
