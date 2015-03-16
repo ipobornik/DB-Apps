@@ -1,0 +1,1112 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Cmj.Web.Extensions</name>
+    </assembly>
+    <members>
+        <member name="T:System.Web.Data.BasePersistable`1">
+            <summary>
+            基本持久化
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="F:System.Web.Data.BasePersistable`1._data">
+            <summary>
+            数据
+            </summary>
+        </member>
+        <member name="F:System.Web.Data.BasePersistable`1._path">
+            <summary>
+            路径
+            </summary>
+        </member>
+        <member name="M:System.Web.Data.BasePersistable`1.#ctor">
+            <summary>
+            基本持久化
+            </summary>
+        </member>
+        <member name="M:System.Web.Data.BasePersistable`1.#ctor(System.Boolean)">
+            <summary>
+            基本持久化
+            </summary>
+            <param name="loadFirst">是否第一次加载</param>
+        </member>
+        <member name="M:System.Web.Data.BasePersistable`1.#ctor(`0)">
+            <summary>
+            基本持久化
+            </summary>
+            <param name="data">数据</param>
+        </member>
+        <member name="M:System.Web.Data.BasePersistable`1.Delete">
+            <summary>
+            删除
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:System.Web.Data.BasePersistable`1.Deserialize(System.String,`0@)">
+            <summary>
+            反序列化
+            </summary>
+            <param name="path"></param>
+            <param name="_data"></param>
+        </member>
+        <member name="M:System.Web.Data.BasePersistable`1.InsertCache">
+            <summary>
+            插入缓存
+            </summary>
+        </member>
+        <member name="M:System.Web.Data.BasePersistable`1.InsertCache(System.String,System.Object,System.Web.Caching.CacheDependency)">
+            <summary>
+            插入缓存
+            </summary>
+            <param name="key">键</param>
+            <param name="data">数据</param>
+            <param name="cd">缓存依赖</param>
+        </member>
+        <member name="M:System.Web.Data.BasePersistable`1.LoadData">
+            <summary>
+            载入数据
+            </summary>
+        </member>
+        <member name="M:System.Web.Data.BasePersistable`1.SaveData">
+            <summary>
+            保存数据
+            </summary>
+        </member>
+        <member name="M:System.Web.Data.BasePersistable`1.Serialize(System.String,`0)">
+            <summary>
+            序列化
+            </summary>
+            <param name="path">路径</param>
+            <param name="_data">数据</param>
+        </member>
+        <member name="P:System.Web.Data.BasePersistable`1.Data">
+            <summary>
+            数据
+            </summary>
+        </member>
+        <member name="T:System.Web.Data.JsonPersistable`1">
+            <summary>
+            Json持久化
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:System.Web.Data.JsonPersistable`1.#cctor">
+            <summary>
+            Json持久化
+            </summary>
+        </member>
+        <member name="M:System.Web.Data.JsonPersistable`1.#ctor">
+            <summary>
+            Json持久化
+            </summary>
+        </member>
+        <member name="M:System.Web.Data.JsonPersistable`1.#ctor(System.Boolean)">
+            <summary>
+            Json持久化
+            <param name="loadFirst">是否第一次加载</param>
+            </summary>
+        </member>
+        <member name="M:System.Web.Data.JsonPersistable`1.#ctor(`0)">
+            <summary>
+            Json持久化
+            </summary>
+            <param name="data">数据</param>
+        </member>
+        <member name="M:System.Web.Data.JsonPersistable`1.Deserialize(System.String,`0@)">
+            <summary>
+            反序列化
+            </summary>
+            <param name="path">路径</param>
+            <param name="_data">数据</param>
+        </member>
+        <member name="M:System.Web.Data.JsonPersistable`1.Serialize(System.String,`0)">
+            <summary>
+            序列化
+            </summary>
+            <param name="path">路径</param>
+            <param name="_data">数据</param>
+        </member>
+        <member name="T:System.Web.FileExtensions">
+            <summary>
+            文件扩展
+            </summary>
+        </member>
+        <member name="M:System.Web.FileExtensions.GetAbsolutePath(System.String)">
+            <summary>
+            获取绝对路径
+            </summary>
+            <param name="path">文件或文件夹相对路径</param>
+            <returns>绝对路径</returns>
+        </member>
+        <member name="M:System.Web.FileExtensions.GetFileName(System.Web.HttpPostedFileBase)">
+            <summary>
+            获取具有扩展名的文件名
+            </summary>
+            <param name="fileBase">文件数据</param>
+            <returns>具有扩展名的文件名</returns>
+        </member>
+        <member name="M:System.Web.FileExtensions.GetFileName(System.String)">
+            <summary>
+            获取具有扩展名的文件名
+            </summary>
+            <param name="filePath">文件相对路径</param>
+            <returns>具有扩展名的文件名</returns>
+        </member>
+        <member name="M:System.Web.FileExtensions.GetFileNameNoExt(System.Web.HttpPostedFileBase)">
+            <summary>
+            获取 不具有扩展名的文件名
+            </summary>
+            <param name="fileBase">文件数据</param>
+            <returns>不具有扩展名的文件名</returns>
+        </member>
+        <member name="M:System.Web.FileExtensions.GetFileNameNoExt(System.String)">
+            <summary>
+            获取 不具有扩展名的文件名
+            </summary>
+            <param name="filePath">文件相对路径</param>
+            <returns>不具有扩展名的文件名</returns>
+        </member>
+        <member name="M:System.Web.FileExtensions.GetFileExt(System.Web.HttpPostedFileBase)">
+            <summary>
+            获取 文件的扩展名
+            </summary>
+            <param name="fileBase">文件数据</param>
+            <returns>文件的扩展名</returns>
+        </member>
+        <member name="M:System.Web.FileExtensions.GetFileExt(System.String)">
+            <summary>
+            获取 文件的扩展名
+            </summary>
+            <param name="filePath">文件相对路径</param>
+            <returns>文件的扩展名</returns>
+        </member>
+        <member name="M:System.Web.FileExtensions.GetFileMimeType(System.Web.HttpPostedFileBase)">
+            <summary>
+            获取 文件的ContentType
+            </summary>
+            <param name="fileBase">文件数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Web.FileExtensions.GetFileMimeType(System.String)">
+            <summary>
+            获取 文件的ContentType
+            </summary>
+            <param name="filePath">文件相对路径</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Web.FileExtensions.GetMimeType(System.String)">
+            <summary>
+            获取 文件的ContentType
+            </summary>
+            <param name="ext">文件的扩展名</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Web.FileExtensions.CreateDirectory(System.String)">
+            <summary>
+            创建文件夹
+            <para>文件夹不存在时创建</para>
+            </summary>
+            <param name="path">文件夹相对地址</param>
+        </member>
+        <member name="M:System.Web.FileExtensions.HasFile(System.String)">
+            <summary>
+            判断文件是否存在
+            </summary>
+            <param name="path">文件相对地址</param>
+            <returns>
+            <para>false：不存在</para>
+            <para>true：存在</para>
+            </returns>
+        </member>
+        <member name="M:System.Web.FileExtensions.GetFileOrFolderLength(System.String)">
+            <summary>
+            获取 文件夹或文件 长度
+            </summary>
+            <param name="path">文件夹或文件 相对路径</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Web.FileExtensions.GetFileOrFolderLength(System.String,System.String,System.Boolean)">
+            <summary>
+            获取 格式化的文件夹或文件 长度
+            </summary>
+            <param name="path">文件夹或文件 相对路径</param>
+            <param name="unit">单位
+            <para>"B"为Byte</para>
+            <para>"K"为K</para>
+            <para>"M"为M</para>
+            <para>"G"为G</para>
+            </param>
+            <param name="suffix">是否带后缀</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Web.FileExtensions.GetFormatFileLength(System.Int64,System.String,System.Boolean)">
+            <summary>
+            获取 格式化的文件夹或文件 长度
+            </summary>
+            <param name="length">文件夹或文件 长度</param>
+            <param name="unit">单位
+            <para>"B"为Byte</para>
+            <para>"K"为K</para>
+            <para>"M"为M</para>
+            <para>"G"为G</para>
+            </param>
+            <param name="suffix">是否带后缀</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Web.FileExtensions.DeleteFile(System.String)">
+            <summary>
+            删除文件
+            </summary>
+            <param name="path">文件相对地址</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Web.FileExtensions.DeleteFile(System.String,System.Boolean)">
+            <summary>
+            删除文件 是否带相应数据
+            </summary>
+            <param name="path">文件相对地址</param>
+            <param name="responseStats">是否返回相应数据，默认false
+            <para>false：不返回</para>
+            <para>true：返回</para>
+            </param>
+            <returns>
+            <para>false：失败</para>
+            <para>true：成功</para>
+            </returns>
+        </member>
+        <member name="M:System.Web.FileExtensions.ClearFolder(System.String)">
+            <summary>
+            清空文件夹
+            <para>清空文件夹内的内容，但不删除文件夹</para>
+            </summary>
+            <param name="path"></param>
+        </member>
+        <member name="M:System.Web.FileExtensions.DeleteFolder(System.String)">
+            <summary>
+            删除文件夹
+            </summary>
+            <param name="path">文件夹绝对地址</param>
+        </member>
+        <member name="T:System.Web.HttpApplicationExtensions">
+            <summary>
+            HttpApplication扩展
+            </summary>
+        </member>
+        <member name="M:System.Web.HttpApplicationExtensions.GetIISMajorVersion(System.Web.HttpApplication)">
+            <summary>
+            获取IIS版本
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="T:System.Web.HttpContextBaseExtensions">
+            <summary>
+            HttpContext基本扩展
+            </summary>
+        </member>
+        <member name="M:System.Web.HttpContextBaseExtensions.ExecuteHttpCompression(System.Web.HttpContextBase)">
+            <summary>
+            执行Http压缩
+            </summary>
+            <param name="context">HttpContextBase</param>
+        </member>
+        <member name="M:System.Web.HttpContextBaseExtensions.GetFromCacheOrMethod``1(System.Web.HttpContextBase,System.String,System.Int32,System.Func{``0})">
+            <summary>
+            获取缓存或方法
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="context">HttpContextBase</param>
+            <param name="cacheKey">缓存键</param>
+            <param name="cacheSeconds">缓存秒</param>
+            <param name="getObjectAction">实例方法</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Web.HttpContextBaseExtensions.GetIISMajorVersion(System.Web.HttpContextBase)">
+            <summary>
+            获取IIS版本
+            </summary>
+            <param name="context">HttpContextBase</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Web.HttpContextBaseExtensions.GetUserIpAddress(System.Web.HttpContextBase)">
+            <summary>
+            获取用户IP地址
+            </summary>
+            <param name="context">HttpContextBase</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Web.HttpContextBaseExtensions.HttpCompressable(System.Web.HttpContextBase)">
+            <summary>
+            HttpCompressable
+            </summary>
+            <param name="context">HttpContextBase</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Web.HttpContextBaseExtensions.IsConnectingLocally(System.Web.HttpContextBase)">
+            <summary>
+            是否本地连接
+            </summary>
+            <param name="context">HttpContextBase</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Web.HttpContextBaseExtensions.IsEncodingAccepted(System.Web.HttpContextBase,System.String)">
+            <summary>
+            是否接受编码
+            </summary>
+            <param name="context">HttpContextBase</param>
+            <param name="encoding">编码</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Web.HttpContextBaseExtensions.SetEncoding(System.Web.HttpContextBase,System.String)">
+            <summary>
+            写入编码
+            </summary>
+            <param name="context">HttpContextBase</param>
+            <param name="encoding">编码</param>
+        </member>
+        <member name="T:System.Web.HttpContextExtensions">
+            <summary>
+            HttpContext扩展
+            </summary>
+        </member>
+        <member name="M:System.Web.HttpContextExtensions.ExecuteHttpCompression(System.Web.HttpContext)">
+            <summary>
+            执行Http压缩
+            </summary>
+            <param name="context">HttpContext</param>
+        </member>
+        <member name="M:System.Web.HttpContextExtensions.GetFromCacheOrMethod``1(System.Web.HttpContext,System.String,System.Int32,System.Func{``0})">
+            <summary>
+            获取缓存或方法
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="context">HttpContext</param>
+            <param name="cacheKey">缓存键</param>
+            <param name="cacheSeconds">缓存秒</param>
+            <param name="getObjectAction">实例方法</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Web.HttpContextExtensions.GetIISMajorVersion(System.Web.HttpContext)">
+            <summary>
+            获取IIS版本
+            </summary>
+            <param name="context">HttpContext</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Web.HttpContextExtensions.GetUserIpAddress(System.Web.HttpContext)">
+            <summary>
+            获取用户IP地址
+            </summary>
+            <param name="context">HttpContext</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Web.HttpContextExtensions.HttpCompressable(System.Web.HttpContext)">
+            <summary>
+            HttpCompressable
+            </summary>
+            <param name="context">HttpContext</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Web.HttpContextExtensions.IsConnectingLocally(System.Web.HttpContext)">
+            <summary>
+            是否本地连接
+            </summary>
+            <param name="context">HttpContext</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Web.HttpContextExtensions.IsEncodingAccepted(System.Web.HttpContext,System.String)">
+            <summary>
+            是否接受编码
+            </summary>
+            <param name="context">HttpContext</param>
+            <param name="encoding">编码</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Web.HttpContextExtensions.SetEncoding(System.Web.HttpContext,System.String)">
+            <summary>
+            写入编码
+            </summary>
+            <param name="context">HttpContext</param>
+            <param name="encoding">编码</param>
+        </member>
+        <member name="T:System.Web.HttpHandlers.CompressionHandler">
+            <summary>
+            压缩处理程序
+            </summary>
+        </member>
+        <member name="M:System.Web.HttpHandlers.CompressionHandler.ProcessRequest(System.Web.HttpContext)">
+            <summary>
+            处理请求
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="P:System.Web.HttpHandlers.CompressionHandler.IsReusable">
+            <summary>
+            是否可重复使用
+            </summary>
+        </member>
+        <member name="T:System.Drawing.CutUtility">
+            <summary>
+            图片裁切
+            </summary>
+        </member>
+        <member name="M:System.Drawing.CutUtility.CutForSquare(System.Web.HttpPostedFileBase,System.String,System.Int32,System.Boolean)">
+            <summary>
+            直接上传的图片正方型裁剪
+            </summary>
+            <param name="fileBase">上传的图片</param>
+            <param name="saveUrl">相对存储路径</param>
+            <param name="side">图片边长</param>
+            <param name="toJpg">转换为jpg
+            <para>默认为不转换</para>
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Drawing.CutUtility.CutForSquare(System.Web.HttpPostedFileBase,System.String,System.Int32,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            直接上传的图片正方型裁剪
+            </summary>
+            <param name="fileBase">上传的图片</param>
+            <param name="saveUrl">相对存储路径</param>
+            <param name="side">图片边长</param>
+            <param name="fileName">图片名称
+            <para>重命名时:新文件名称</para>
+            <para>文件名追加字符时:文件名追加字符</para>
+            </param>
+            <param name="isRename">是否重命名</param>
+            <param name="toJpg">转换为jpg
+            <para>默认为不转换</para>
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Drawing.CutUtility.CutForSquare(System.Web.HttpPostedFileBase,System.String,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            直接上传的图片正方型裁剪
+            </summary>
+            <param name="fileBase">上传的图片</param>
+            <param name="saveUrl">相对存储路径</param>
+            <param name="side">图片边长</param>
+            <param name="flag">图片质量
+            <para>0~100</para>
+            </param>
+            <param name="toJpg">转换为jpg
+            <para>默认为不转换</para>
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Drawing.CutUtility.CutForSquare(System.Web.HttpPostedFileBase,System.String,System.Int32,System.Int32,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            直接上传的图片正方型裁剪
+            </summary>
+            <param name="fileBase">上传的图片</param>
+            <param name="saveUrl">相对存储路径</param>
+            <param name="side">图片边长</param>
+            <param name="flag">图片质量
+            <para>0~100</para>
+            </param>
+            <param name="fileName">图片名称
+            <para>重命名时:新文件名称</para>
+            <para>文件名追加字符时:文件名追加字符</para>
+            </param>
+            <param name="isRename">是否重命名</param>
+            <param name="toJpg">转换为jpg
+            <para>默认为不转换</para>
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Drawing.CutUtility.CutForSquare(System.String,System.String,System.Int32,System.Boolean)">
+            <summary>
+            正方型裁剪
+            </summary>
+            <param name="imgUrl">图片相对路径</param>
+            <param name="saveUrl">相对存储路径</param>
+            <param name="side">图片边长</param>
+            <param name="toJpg">转换为jpg
+            <para>默认为不转换</para>
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Drawing.CutUtility.CutForSquare(System.String,System.String,System.Int32,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            正方型裁剪
+            </summary>
+            <param name="imgUrl">图片相对路径</param>
+            <param name="saveUrl">相对存储路径</param>
+            <param name="side">图片边长</param>
+            <param name="fileName">图片名称
+            <para>重命名时:新文件名称</para>
+            <para>文件名追加字符时:文件名追加字符</para>
+            </param>
+            <param name="isRename">是否重命名</param>
+            <param name="toJpg">转换为jpg
+            <para>默认为不转换</para>
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Drawing.CutUtility.CutForSquare(System.String,System.String,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            正方型裁剪
+            </summary>
+            <param name="imgUrl">图片相对路径</param>
+            <param name="saveUrl">相对存储路径</param>
+            <param name="side">图片边长</param>
+            <param name="flag">图片质量
+            <para>0~100</para>
+            </param>
+            <param name="toJpg">转换为jpg
+            <para>默认为不转换</para>
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Drawing.CutUtility.CutForSquare(System.String,System.String,System.Int32,System.Int32,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            正方型裁剪
+            </summary>
+            <param name="imgUrl">图片相对路径</param>
+            <param name="saveUrl">相对存储路径</param>
+            <param name="side">图片边长</param>
+            <param name="flag">图片质量
+            <para>0~100</para>
+            </param>
+            <param name="fileName">图片名称
+            <para>重命名时:新文件名称</para>
+            <para>文件名追加字符时:文件名追加字符</para>
+            </param>
+            <param name="isRename">是否重命名</param>
+            <param name="toJpg">转换为jpg
+            <para>默认为不转换</para>
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Drawing.CutUtility.CutForCustom(System.Web.HttpPostedFileBase,System.String,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            直接上传的图片自定义裁剪
+            </summary>
+            <param name="fileBase">上传的图片</param>
+            <param name="saveUrl">相对存储路径</param>
+            <param name="width">图片宽度</param>
+            <param name="height">图片高度度</param>
+            <param name="toJpg">转换为jpg
+            <para>默认为不转换</para>
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Drawing.CutUtility.CutForCustom(System.Web.HttpPostedFileBase,System.String,System.Int32,System.Int32,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            直接上传的图片自定义裁剪
+            </summary>
+            <param name="fileBase">上传的图片</param>
+            <param name="saveUrl">相对存储路径</param>
+            <param name="width">图片宽度</param>
+            <param name="height">图片高度度</param>
+            <param name="fileName">图片名称
+            <para>重命名时:新文件名称</para>
+            <para>文件名追加字符时:文件名追加字符</para>
+            </param>
+            <param name="isRename">是否重命名</param>
+            <param name="toJpg">转换为jpg
+            <para>默认为不转换</para>
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Drawing.CutUtility.CutForCustom(System.Web.HttpPostedFileBase,System.String,System.Int32,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            直接上传的图片自定义裁剪
+            </summary>
+            <param name="fileBase">上传的图片</param>
+            <param name="saveUrl">相对存储路径</param>
+            <param name="width">图片宽度</param>
+            <param name="height">图片高度度</param>
+            <param name="flag">图片质量
+            <para>0~100</para>
+            </param>
+            <param name="toJpg">转换为jpg
+            <para>默认为不转换</para>
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Drawing.CutUtility.CutForCustom(System.Web.HttpPostedFileBase,System.String,System.Int32,System.Int32,System.Int32,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            直接上传的图片自定义裁剪
+            </summary>
+            <param name="fileBase">上传的图片</param>
+            <param name="saveUrl">相对存储路径</param>
+            <param name="width">图片宽度</param>
+            <param name="height">图片高度度</param>
+            <param name="flag">图片质量
+            <para>0~100</para>
+            </param>
+            <param name="fileName">图片名称
+            <para>重命名时:新文件名称</para>
+            <para>文件名追加字符时:文件名追加字符</para>
+            </param>
+            <param name="isRename">是否重命名</param>
+            <param name="toJpg">转换为jpg
+            <para>默认为不转换</para>
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Drawing.CutUtility.CutForCustom(System.String,System.String,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            指定路径的图片自定义裁剪
+            </summary>
+            <param name="imgUrl">图片相对路径</param>
+            <param name="saveUrl">相对存储路径</param>
+            <param name="width">图片宽度</param>
+            <param name="height">图片高度度</param>
+            <param name="toJpg">转换为jpg
+            <para>默认为不转换</para>
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Drawing.CutUtility.CutForCustom(System.String,System.String,System.Int32,System.Int32,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            指定路径的图片自定义裁剪
+            </summary>
+            <param name="imgUrl">图片相对路径</param>
+            <param name="saveUrl">相对存储路径</param>
+            <param name="width">图片宽度</param>
+            <param name="height">图片高度度</param>
+            <param name="fileName">图片名称
+            <para>重命名时:新文件名称</para>
+            <para>文件名追加字符时:文件名追加字符</para>
+            </param>
+            <param name="isRename">是否重命名</param>
+            <param name="toJpg">转换为jpg
+            <para>默认为不转换</para>
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Drawing.CutUtility.CutForCustom(System.String,System.String,System.Int32,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            指定路径的图片自定义裁剪
+            </summary>
+            <param name="imgUrl">图片相对路径</param>
+            <param name="saveUrl">相对存储路径</param>
+            <param name="width">图片宽度</param>
+            <param name="height">图片高度度</param>
+            <param name="flag">图片质量
+            <para>0~100</para>
+            </param>
+            <param name="toJpg">转换为jpg
+            <para>默认为不转换</para>
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Drawing.CutUtility.CutForCustom(System.String,System.String,System.Int32,System.Int32,System.Int32,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            指定路径的图片自定义裁剪
+            </summary>
+            <param name="imgUrl">图片相对路径</param>
+            <param name="saveUrl">相对存储路径</param>
+            <param name="width">图片宽度</param>
+            <param name="height">图片高度度</param>
+            <param name="flag">图片质量
+            <para>0~100</para>
+            </param>
+            <param name="fileName">图片名称
+            <para>重命名时:新文件名称</para>
+            <para>文件名追加字符时:文件名追加字符</para>
+            </param>
+            <param name="isRename">是否重命名</param>
+            <param name="toJpg">转换为jpg
+            <para>默认为不转换</para>
+            </param>
+            <returns></returns>
+        </member>
+        <member name="T:System.Drawing.ThumbnailUtility">
+            <summary>
+            图片缩略图
+            </summary>
+        </member>
+        <member name="M:System.Drawing.ThumbnailUtility.ThumbnailForWidth(System.Web.HttpPostedFileBase,System.String,System.Int32,System.Boolean)">
+            <summary>
+            生成上传缩略图
+            <para>宽为标准</para>
+            </summary>
+            <param name="fileBase">上传的图片</param>
+            <param name="saveUrl">相对存储路径</param>
+            <param name="width">图片宽度</param>
+            <param name="toJpg">转换为jpg
+            <para>默认为不转换</para>
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Drawing.ThumbnailUtility.ThumbnailForWidth(System.Web.HttpPostedFileBase,System.String,System.Int32,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            生成上传缩略图
+            <para>宽为标准</para>
+            </summary>
+            <param name="fileBase">上传的图片</param>
+            <param name="saveUrl">相对存储路径</param>
+            <param name="width">图片宽度</param>
+            <param name="fileName">图片名称
+            <para>重命名时:新文件名称</para>
+            <para>文件名追加字符时:文件名追加字符</para>
+            </param>
+            <param name="isRename">是否重命名</param>
+            <param name="toJpg">转换为jpg
+            <para>默认为不转换</para>
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Drawing.ThumbnailUtility.ThumbnailForWidth(System.Web.HttpPostedFileBase,System.String,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            生成上传缩略图
+            <para>宽为标准</para>
+            </summary>
+            <param name="fileBase">上传的图片</param>
+            <param name="saveUrl">相对存储路径</param>
+            <param name="width">图片宽度</param>
+            <param name="flag">图片质量
+            <para>0~100</para>
+            </param>
+            <param name="toJpg">转换为jpg
+            <para>默认为不转换</para>
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Drawing.ThumbnailUtility.ThumbnailForWidth(System.Web.HttpPostedFileBase,System.String,System.Int32,System.Int32,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            生成上传缩略图
+            <para>宽为标准</para>
+            </summary>
+            <param name="fileBase">上传的图片</param>
+            <param name="saveUrl">相对存储路径</param>
+            <param name="width">图片宽度</param>
+            <param name="flag">图片质量
+            <para>0~100</para>
+            </param>
+            <param name="fileName">图片名称
+            <para>重命名时:新文件名称</para>
+            <para>文件名追加字符时:文件名追加字符</para>
+            </param>
+            <param name="isRename">是否重命名</param>
+            <param name="toJpg">转换为jpg
+            <para>默认为不转换</para>
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Drawing.ThumbnailUtility.ThumbnailForWidth(System.String,System.String,System.Int32,System.Boolean)">
+            <summary>
+            生成指定路径的图片缩略图
+            <para>宽为标准</para>
+            </summary>
+            <param name="imgUrl">图片相对路径</param>
+            <param name="saveUrl">相对存储路径</param>
+            <param name="width">图片宽度</param>
+            <param name="toJpg">转换为jpg
+            <para>默认为不转换</para>
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Drawing.ThumbnailUtility.ThumbnailForWidth(System.String,System.String,System.Int32,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            生成指定路径的图片缩略图
+            <para>宽为标准</para>
+            </summary>
+            <param name="imgUrl">图片相对路径</param>
+            <param name="saveUrl">相对存储路径</param>
+            <param name="width">图片宽度</param>
+            <param name="fileName">图片名称
+            <para>重命名时:新文件名称</para>
+            <para>文件名追加字符时:文件名追加字符</para>
+            </param>
+            <param name="isRename">是否重命名</param>
+            <param name="toJpg">转换为jpg
+            <para>默认为不转换</para>
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Drawing.ThumbnailUtility.ThumbnailForWidth(System.String,System.String,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            生成指定路径的图片缩略图
+            <para>宽为标准</para>
+            </summary>
+            <param name="imgUrl">图片相对路径</param>
+            <param name="saveUrl">相对存储路径</param>
+            <param name="width">图片宽度</param>
+            <param name="flag">图片质量
+            <para>0~100</para>
+            </param>
+            <param name="toJpg">转换为jpg
+            <para>默认为不转换</para>
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Drawing.ThumbnailUtility.ThumbnailForWidth(System.String,System.String,System.Int32,System.Int32,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            生成指定路径的图片缩略图
+            <para>宽为标准</para>
+            </summary>
+            <param name="imgUrl">图片相对路径</param>
+            <param name="saveUrl">相对存储路径</param>
+            <param name="width">图片宽度</param>
+            <param name="flag">图片质量
+            <para>0~100</para>
+            </param>
+            <param name="fileName">图片名称
+            <para>重命名时:新文件名称</para>
+            <para>文件名追加字符时:文件名追加字符</para>
+            </param>
+            <param name="isRename">是否重命名</param>
+            <param name="toJpg">转换为jpg
+            <para>默认为不转换</para>
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Drawing.ThumbnailUtility.ThumbnailForHeight(System.Web.HttpPostedFileBase,System.String,System.Int32,System.Boolean)">
+            <summary>
+            生成上传缩略图
+            <para>高为标准</para>
+            </summary>
+            <param name="fileBase">上传的图片</param>
+            <param name="saveUrl">相对存储路径</param>
+            <param name="height">图片高度</param>
+            <param name="toJpg">转换为jpg
+            <para>默认为不转换</para>
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Drawing.ThumbnailUtility.ThumbnailForHeight(System.Web.HttpPostedFileBase,System.String,System.Int32,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            生成上传缩略图
+            <para>高为标准</para>
+            </summary>
+            <param name="fileBase">上传的图片</param>
+            <param name="saveUrl">相对存储路径</param>
+            <param name="height">图片高度</param>
+            <param name="fileName">图片名称
+            <para>重命名时:新文件名称</para>
+            <para>文件名追加字符时:文件名追加字符</para>
+            </param>
+            <param name="isRename">是否重命名</param>
+            <param name="toJpg">转换为jpg
+            <para>默认为不转换</para>
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Drawing.ThumbnailUtility.ThumbnailForHeight(System.Web.HttpPostedFileBase,System.String,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            生成上传缩略图
+            <para>高为标准</para>
+            </summary>
+            <param name="fileBase">上传的图片</param>
+            <param name="saveUrl">相对存储路径</param>
+            <param name="height">图片高度</param>
+            <param name="flag">图片质量
+            <para>0~100</para>
+            </param>
+            <param name="toJpg">转换为jpg
+            <para>默认为不转换</para>
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Drawing.ThumbnailUtility.ThumbnailForHeight(System.Web.HttpPostedFileBase,System.String,System.Int32,System.Int32,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            生成上传缩略图
+            <para>高为标准</para>
+            </summary>
+            <param name="fileBase">上传的图片</param>
+            <param name="saveUrl">相对存储路径</param>
+            <param name="height">图片高度</param>
+            <param name="flag">图片质量
+            <para>0~100</para>
+            </param>
+            <param name="fileName">图片名称
+            <para>重命名时:新文件名称</para>
+            <para>文件名追加字符时:文件名追加字符</para>
+            </param>
+            <param name="isRename">是否重命名</param>
+            <param name="toJpg">转换为jpg
+            <para>默认为不转换</para>
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Drawing.ThumbnailUtility.ThumbnailForHeight(System.String,System.String,System.Int32,System.Boolean)">
+            <summary>
+            生成指定路径的图片缩略图
+            <para>宽为标准</para>
+            </summary>
+            <param name="imgUrl">图片相对路径</param>
+            <param name="saveUrl">相对存储路径</param>
+            <param name="height">图片高度</param>
+            <param name="toJpg">转换为jpg
+            <para>默认为不转换</para>
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Drawing.ThumbnailUtility.ThumbnailForHeight(System.String,System.String,System.Int32,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            生成指定路径的图片缩略图
+            <para>宽为标准</para>
+            </summary>
+            <param name="imgUrl">图片相对路径</param>
+            <param name="saveUrl">相对存储路径</param>
+            <param name="height">图片高度</param>
+            <param name="fileName">图片名称
+            <para>重命名时:新文件名称</para>
+            <para>文件名追加字符时:文件名追加字符</para>
+            </param>
+            <param name="isRename">是否重命名</param>
+            <param name="toJpg">转换为jpg
+            <para>默认为不转换</para>
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Drawing.ThumbnailUtility.ThumbnailForHeight(System.String,System.String,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            生成指定路径的图片缩略图
+            <para>宽为标准</para>
+            </summary>
+            <param name="imgUrl">图片相对路径</param>
+            <param name="saveUrl">相对存储路径</param>
+            <param name="height">图片高度</param>
+            <param name="flag">图片质量
+            <para>0~100</para>
+            </param>
+            <param name="toJpg">转换为jpg
+            <para>默认为不转换</para>
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Drawing.ThumbnailUtility.ThumbnailForHeight(System.String,System.String,System.Int32,System.Int32,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            生成指定路径的图片缩略图
+            <para>宽为标准</para>
+            </summary>
+            <param name="imgUrl">图片相对路径</param>
+            <param name="saveUrl">相对存储路径</param>
+            <param name="height">图片高度</param>
+            <param name="flag">图片质量
+            <para>0~100</para>
+            </param>
+            <param name="fileName">图片名称
+            <para>重命名时:新文件名称</para>
+            <para>文件名追加字符时:文件名追加字符</para>
+            </param>
+            <param name="isRename">是否重命名</param>
+            <param name="toJpg">转换为jpg
+            <para>默认为不转换</para>
+            </param>
+            <returns></returns>
+        </member>
+        <member name="T:System.Drawing.Utility">
+            <summary>
+            基础应用
+            </summary>
+        </member>
+        <member name="M:System.Drawing.Utility.Base64ToImg(System.String,System.String,System.Int32)">
+            <summary>
+            Base64转图片
+            </summary>
+            <param name="base64"></param>
+            <param name="saveUrl"></param>
+            <param name="flag"></param>
+            <returns></returns>
+        </member>
+        <member name="T:System.Drawing.WatermarkUtility">
+            <summary>
+            图片水印
+            </summary>
+        </member>
+        <member name="M:System.Drawing.WatermarkUtility.Watermark(System.String,System.String,System.Single,System.Drawing.WatermarkUtility.ImagePosition,System.String,System.Boolean)">
+            <summary>   
+            添加图片水印
+            </summary>   
+            <param name="imgUrl">图片相对路径</param>   
+            <param name="waterImageUrl">水印图片相对路径</param>   
+            <param name="alpha">透明度(0.1-1.0数值越小透明度越高)</param>   
+            <param name="position">水印位置</param>   
+            <param name="saveUrl" >新图片保存的相对路径</param>   
+            <param name="delInitImg">是否删除原路径图片</param>
+            <returns>返回生成于指定文件夹下的水印文件名</returns>   
+        </member>
+        <member name="T:System.Drawing.WatermarkUtility.ImagePosition">
+            <summary>
+            水印位置
+            </summary>
+        </member>
+        <member name="F:System.Drawing.WatermarkUtility.ImagePosition.LeftTop">
+            <summary>
+            左上
+            </summary>
+        </member>
+        <member name="F:System.Drawing.WatermarkUtility.ImagePosition.LeftBottom">
+            <summary>
+            左下
+            </summary>
+        </member>
+        <member name="F:System.Drawing.WatermarkUtility.ImagePosition.RightTop">
+            <summary>
+            右上
+            </summary>
+        </member>
+        <member name="F:System.Drawing.WatermarkUtility.ImagePosition.RigthBottom">
+            <summary>
+            右下
+            </summary>
+        </member>
+        <member name="F:System.Drawing.WatermarkUtility.ImagePosition.TopMiddle">
+            <summary>
+            顶部居中
+            </summary>
+        </member>
+        <member name="F:System.Drawing.WatermarkUtility.ImagePosition.BottomMiddle">
+            <summary>
+            底部居中
+            </summary>
+        </member>
+        <member name="F:System.Drawing.WatermarkUtility.ImagePosition.Center">
+            <summary>
+            中心
+            </summary>
+        </member>
+        <member name="T:System.IO.StreamExtensions">
+            <summary>
+            数据流扩展
+            </summary>
+        </member>
+        <member name="M:System.IO.StreamExtensions.SaveImage(System.IO.Stream,System.String,System.String)">
+            <summary>
+            将数据流保存为图片
+            </summary>
+            <param name="stream">数据流</param>
+            <param name="saveUrl">相对存储路径</param>
+            <param name="imageName">图片名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.IO.StreamExtensions.StreamToBytes(System.IO.Stream)">
+            <summary>
+            将数据流转化为byte[]
+            </summary>
+            <param name="stream"></param>
+            <returns></returns>
+        </member>
+        <member name="T:System.Web.Upload">
+            <summary>
+            上传
+            </summary>
+        </member>
+        <member name="M:System.Web.Upload.UploadFile(System.Web.HttpPostedFileBase,System.String)">
+            <summary>
+            上传文件
+            </summary>
+            <param name="file">客户端上传的文件</param>
+            <param name="saveUrl">存储位置</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Web.Upload.UploadImage(System.Web.HttpPostedFileBase,System.String,System.Int32,System.Boolean)">
+            <summary>
+            上传图片
+            </summary>
+            <param name="file">客户端上传的图片</param>
+            <param name="saveUrl">存储位置</param>
+            <param name="quality">图片质量(jpg时启用)
+            <para>为0时为普通压缩，会出现锯齿</para></param>
+            <param name="toJpg">是否转换成jpg格式</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

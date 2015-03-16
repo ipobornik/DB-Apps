@@ -1,0 +1,1089 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CmjExtensions</name>
+    </assembly>
+    <members>
+        <member name="T:System.ArrayMergeExtensions">
+            <summary>
+            数组合并
+            </summary>
+        </member>
+        <member name="M:System.ArrayMergeExtensions.Merge``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            <para>两个 字符串 合并</para>
+            <para>两个 数组 合并</para>
+            </summary>
+            <param name="first">当前 字符串或数组</param>
+            <param name="second">合并的 字符串或数组</param>
+            <returns></returns>
+        </member>
+        <member name="T:System.ArrayCompareExtensions">
+            <summary>
+            数组比较
+            </summary>
+        </member>
+        <member name="M:System.ArrayCompareExtensions.Different``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            <para>比较两个 字符串 的不同 值</para>
+            <para>比较两个 数组 的不同 值</para>
+            </summary>
+            <param name="first">当前 字符串或数组</param>
+            <param name="second">比较 字符串或数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.ArrayCompareExtensions.Equal``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            <para>比较两个 字符串 的相同 值</para>
+            <para>比较两个 数组 的相同 值</para>
+            </summary>
+            <param name="first">当前 字符串或数组</param>
+            <param name="second">比较 字符串或数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.ArrayCompareExtensions.IsEqual``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            比较两个 字符串或数组 是否相同
+            </summary>
+            <param name="first">当前 字符串或数组</param>
+            <param name="second">比较 字符串或数组</param>
+            <returns></returns>
+        </member>
+        <member name="T:System.Collections.Generic.DictionaryExtensions">
+            <summary>
+            Dictionary扩展
+            </summary>
+        </member>
+        <member name="M:System.Collections.Generic.DictionaryExtensions.TryAdd``2(System.Collections.Generic.Dictionary{``0,``1},``0,``1)">
+            <summary>
+            尝试将键和值添加到字典中：如果不存在，才添加；存在，不添加也不抛导常
+            <param name="dict">当前键和值的集合</param>
+            <param name="key">键</param>
+            <param name="value">值</param>
+            </summary>
+        </member>
+        <member name="M:System.Collections.Generic.DictionaryExtensions.AddOrPeplace``2(System.Collections.Generic.Dictionary{``0,``1},``0,``1)">
+            <summary>
+            将键和值添加或替换到字典中：如果不存在，则添加；存在，则替换
+            </summary>
+            <param name="dict">当前键和值的集合</param>
+            <param name="key">键</param>
+            <param name="value">值</param>
+        </member>
+        <member name="M:System.Collections.Generic.DictionaryExtensions.GetValue``2(System.Collections.Generic.Dictionary{``0,``1},``0,``1)">
+            <summary>
+            获取与指定的键相关联的值，如果没有则返回输入的默认值
+            </summary>
+            <param name="dict">当前键和值的集合</param>
+            <param name="key">键</param>
+            <param name="defaultValue">默认值</param>
+        </member>
+        <member name="M:System.Collections.Generic.DictionaryExtensions.AddRange``2(System.Collections.Generic.Dictionary{``0,``1},System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{``0,``1}},System.Boolean)">
+            <summary>
+            向字典中批量添加键值对
+            </summary>
+            <param name="dict">当前键和值的集合</param>
+            <param name="values">新的键和值的集合</param>
+            <param name="replaceExisted">如果已存在，是否替换</param>
+        </member>
+        <member name="T:System.Collections.Generic.IDictionaryExtensions">
+            <summary>
+            IDictionary扩展
+            </summary>
+        </member>
+        <member name="M:System.Collections.Generic.IDictionaryExtensions.AddOrPeplace``2(System.Collections.Generic.IDictionary{``0,``1},``0,``1)">
+            <summary>
+            将键和值添加或替换到字典中：如果不存在，则添加；存在，则替换
+            </summary>
+            <param name="dict">当前键和值的集合</param>
+            <param name="key">键</param>
+            <param name="value">值</param>
+        </member>
+        <member name="M:System.Collections.Generic.IDictionaryExtensions.AddRange``2(System.Collections.Generic.IDictionary{``0,``1},System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{``0,``1}},System.Boolean)">
+            <summary>
+            向字典中批量添加键值对
+            </summary>
+            <param name="dict">当前键和值的集合</param>
+            <param name="values">新的键和值的集合</param>
+            <param name="replaceExisted">如果已存在，是否替换</param>
+        </member>
+        <member name="T:System.Configuration.AppSettingsHelper">
+            <summary>
+            应用程序设置
+            </summary>
+        </member>
+        <member name="M:System.Configuration.AppSettingsHelper.#ctor">
+            <summary>
+            应用程序设置
+            </summary>
+        </member>
+        <member name="M:System.Configuration.AppSettingsHelper.#ctor(System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            应用程序设置
+            </summary>
+            <param name="settings">设置</param>
+        </member>
+        <member name="M:System.Configuration.AppSettingsHelper.Get(System.String)">
+            <summary>
+            获取
+            </summary>
+            <param name="key">键</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Configuration.AppSettingsHelper.Get(System.String,System.String)">
+            <summary>
+            获取
+            </summary>
+            <param name="key">键</param>
+            <param name="defaultValue">默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Configuration.AppSettingsHelper.GetArray(System.String)">
+            <summary>
+            获取数组
+            </summary>
+            <param name="key">键</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Configuration.AppSettingsHelper.GetArray(System.String,System.Char[])">
+            <summary>
+            获取数组
+            </summary>
+            <param name="key">键</param>
+            <param name="delimeter">字段名</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Configuration.AppSettingsHelper.GetArray(System.String,System.String[])">
+            <summary>
+            获取数组
+            </summary>
+            <param name="key">键</param>
+            <param name="defaultValue">默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Configuration.AppSettingsHelper.GetArray(System.String,System.String[],System.Char[])">
+            <summary>
+            获取数组
+            </summary>
+            <param name="key">键</param>
+            <param name="defaultValue">默认值</param>
+            <param name="delimeter">字段名</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Configuration.AppSettingsHelper.GetBoolean(System.String)">
+            <summary>
+            获取Bool
+            </summary>
+            <param name="key">键</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Configuration.AppSettingsHelper.GetBoolean(System.String,System.Boolean)">
+            <summary>
+            获取Bool
+            </summary>
+            <param name="key">键</param>
+            <param name="defaultValue">默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Configuration.AppSettingsHelper.GetByte(System.String)">
+            <summary>
+            获取Byte
+            </summary>
+            <param name="key">键</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Configuration.AppSettingsHelper.GetByte(System.String,System.Byte)">
+            <summary>
+            获取Byte
+            </summary>
+            <param name="key">键</param>
+            <param name="defaultValue">默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Configuration.AppSettingsHelper.GetGuid(System.String)">
+            <summary>
+            获取Guid
+            </summary>
+            <param name="key">键</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Configuration.AppSettingsHelper.GetGuid(System.String,System.Guid)">
+            <summary>
+            获取Guid
+            </summary>
+            <param name="key">键</param>
+            <param name="defaultValue">默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Configuration.AppSettingsHelper.GetGuid(System.String,System.Nullable{System.Guid})">
+            <summary>
+            获取Guid
+            </summary>
+            <param name="key">键</param>
+            <param name="defaultValue">默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Configuration.AppSettingsHelper.GetInt16(System.String)">
+            <summary>
+            获取Int16
+            </summary>
+            <param name="key">键</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Configuration.AppSettingsHelper.GetInt16(System.String,System.Int16)">
+            <summary>
+            获取Int16
+            </summary>
+            <param name="key">键</param>
+            <param name="defaultValue">默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Configuration.AppSettingsHelper.GetInt32(System.String)">
+            <summary>
+            获取Int
+            </summary>
+            <param name="key">键</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Configuration.AppSettingsHelper.GetInt32(System.String,System.Int32)">
+            <summary>
+            获取Int
+            </summary>
+            <param name="key">键</param>
+            <param name="defaultValue">默认值</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Configuration.AppSettingsHelper.GetInt64(System.String)">
+            <summary>
+            获取Long
+            </summary>
+            <param name="key">键</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Configuration.AppSettingsHelper.GetInt64(System.String,System.Int64)">
+            <summary>
+            获取Long
+            </summary>
+            <param name="key">键</param>
+            <param name="defaultValue">默认值</param>
+            <returns></returns>
+        </member>
+        <member name="P:System.Configuration.AppSettingsHelper.Item(System.String)">
+            <summary>
+            名称
+            </summary>
+            <param name="name">名称</param>
+            <returns></returns>
+        </member>
+        <member name="P:System.Configuration.AppSettingsHelper.Item(System.Int32)">
+            <summary>
+            所在位置
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="T:System.Drawing.Imaging.ImageCodecInfoExtensions">
+            <summary>
+            图片编码解码器扩展
+            </summary>
+        </member>
+        <member name="M:System.Drawing.Imaging.ImageCodecInfoExtensions.GetImageCodecInfo(System.String)">
+            <summary>
+            获取图片编码解码器
+            </summary>
+            <param name="mimeType">图片mimeType</param>
+            <returns></returns>
+        </member>
+        <member name="T:System.Hardware">
+            <summary>
+            计算机硬件信息
+            </summary>
+        </member>
+        <member name="M:System.Hardware.GetCpuID">
+            <summary>
+            获取cpu序列号
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:System.Hardware.GetHDIndex">
+            <summary>
+            获取硬盘地址
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:System.Hardware.GetMacAddress">
+            <summary>
+            获取网卡硬件地址
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:System.Hardware.GetServerIPs">
+            <summary>
+            获取服务器所有地址
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:System.Hardware.ServerIPHasWAN">
+            <summary>
+            判断服务器所有地址是否是含有因特网IP地址
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:System.Hardware.IsInnerIP(System.String)">
+            <summary>
+            判断IP地址是否为内网IP地址
+            </summary>
+            <param name="ipAddress">IP地址字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Hardware.GetIpNum(System.String)">
+            <summary>
+            把IP地址转换为Long型数字
+            </summary>
+            <param name="ipAddress">IP地址字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Hardware.IsInner(System.Int64,System.Int64,System.Int64)">
+            <summary>
+            判断用户IP地址转换为Long型后是否在内网IP地址所在范围
+            </summary>
+            <param name="userIp"></param>
+            <param name="begin"></param>
+            <param name="end"></param>
+            <returns></returns>
+        </member>
+        <member name="T:System.Linq.DistinctExtensions">
+            <summary>
+            Linq 差异扩展
+            </summary>
+        </member>
+        <member name="M:System.Linq.DistinctExtensions.Distinct``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})">
+            <summary>
+            Linq 差异
+            </summary>
+            <typeparam name="T"></typeparam>
+            <typeparam name="V"></typeparam>
+            <param name="source"></param>
+            <param name="keySelector"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Linq.DistinctExtensions.Distinct``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1},System.Collections.Generic.IEqualityComparer{``1})">
+            <summary>
+            Linq 差异
+            </summary>
+            <typeparam name="T"></typeparam>
+            <typeparam name="V"></typeparam>
+            <param name="source"></param>
+            <param name="keySelector"></param>
+            <param name="comparer"></param>
+            <returns></returns>
+        </member>
+        <member name="T:System.Linq.CommonEqualityComparer`2">
+            <summary>
+            共同平等比较器
+            </summary>
+            <typeparam name="T"></typeparam>
+            <typeparam name="V"></typeparam>
+        </member>
+        <member name="M:System.Linq.CommonEqualityComparer`2.#ctor(System.Func{`0,`1},System.Collections.Generic.IEqualityComparer{`1})">
+            <summary>
+            共同平等比较器
+            </summary>
+            <param name="keySelector"></param>
+            <param name="comparer"></param>
+        </member>
+        <member name="M:System.Linq.CommonEqualityComparer`2.#ctor(System.Func{`0,`1})">
+            <summary>
+            共同平等比较器
+            </summary>
+            <param name="keySelector"></param>
+        </member>
+        <member name="M:System.Linq.CommonEqualityComparer`2.Equals(`0,`0)">
+            <summary>
+            等于
+            </summary>
+            <param name="x"></param>
+            <param name="y"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Linq.CommonEqualityComparer`2.GetHashCode(`0)">
+            <summary>
+            获取哈希码
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="T:System.Linq.Expressions.ExpressionExtensions">
+            <summary>
+            表达式扩展
+            </summary>
+        </member>
+        <member name="M:System.Linq.Expressions.ExpressionExtensions.And``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
+            <summary>
+            And
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="expression1"></param>
+            <param name="expression2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Linq.Expressions.ExpressionExtensions.False``1">
+            <summary>
+            False
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:System.Linq.Expressions.ExpressionExtensions.Or``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
+            <summary>
+            Or
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="expression1"></param>
+            <param name="expression2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Linq.Expressions.ExpressionExtensions.True``1">
+            <summary>
+            True
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:System.Linq.Expressions.ExpressionExtensions.TryGetEntityAndFieldNameFromExpression(System.Linq.Expressions.Expression,System.Object@,System.String@)">
+            <summary>
+            尝试从表达式得到实体和字段名
+            </summary>
+            <param name="expression">表达式</param>
+            <param name="entity">实体</param>
+            <param name="fieldName">字段名</param>
+            <returns></returns>
+        </member>
+        <member name="T:System.Linq.IQueryableSortExtensions">
+            <summary>
+            IQueryable排序扩展
+            </summary>
+        </member>
+        <member name="M:System.Linq.IQueryableSortExtensions.ApplyOrderByClause``1(System.Linq.IQueryable{``0},System.String)">
+            <summary>
+            正序
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="query"></param>
+            <param name="column"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Linq.IQueryableSortExtensions.ApplyOrderByDescendingClause``1(System.Linq.IQueryable{``0},System.String)">
+            <summary>
+            倒序
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="query"></param>
+            <param name="column"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Linq.IQueryableSortExtensions.FirstOrDefault(System.Linq.IQueryable)">
+            <summary>
+            第一个或默认
+            </summary>
+            <param name="source"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Linq.IQueryableSortExtensions.SortBy``1(System.Linq.IQueryable{``0},System.String)">
+            <summary>
+            排序方式
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="source"></param>
+            <param name="propertyName">属性名</param>
+            <returns></returns>
+        </member>
+        <member name="T:System.MatchType">
+            <summary>
+            正则表达式
+            </summary>
+        </member>
+        <member name="F:System.MatchType.Guid">
+            <summary>
+            Guid
+            </summary>
+        </member>
+        <member name="F:System.MatchType.大写字母">
+            <summary>
+            大写字母
+            </summary>
+        </member>
+        <member name="F:System.MatchType.小写字母">
+            <summary>
+            小写字母
+            </summary>
+        </member>
+        <member name="F:System.MatchType.字母">
+            <summary>
+            字母
+            </summary>
+        </member>
+        <member name="F:System.MatchType.整数">
+            <summary>
+            整数
+            </summary>
+        </member>
+        <member name="F:System.MatchType.正整数">
+            <summary>
+            正整数
+            </summary>
+        </member>
+        <member name="F:System.MatchType.负整数">
+            <summary>
+            负整数
+            </summary>
+        </member>
+        <member name="F:System.MatchType.非正整数">
+            <summary>
+            非正整数
+            </summary>
+        </member>
+        <member name="F:System.MatchType.非负整数">
+            <summary>
+            非负整数
+            </summary>
+        </member>
+        <member name="F:System.MatchType.邮箱">
+            <summary>
+            邮箱
+            </summary>
+        </member>
+        <member name="F:System.MatchType.邮编">
+            <summary>
+            邮编
+            </summary>
+        </member>
+        <member name="T:System.StringValidators">
+            <summary>
+            String扩展
+            </summary>
+        </member>
+        <member name="M:System.StringValidators.ValidatorIsGuid(System.String)">
+            <summary>
+            是否Guid
+            </summary>
+            <param name="str">当前字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.StringValidators.ValidatorIsGuid(System.String,System.Guid@)">
+            <summary>
+            是否Guid
+            </summary>
+            <param name="str">当前字符串</param>
+            <param name="output"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.StringValidators.ValidatorIsLetter(System.String)">
+            <summary>
+            是否英文字母
+            </summary>
+            <param name="str">当前字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.StringValidators.ValidatorIsLetterForUpper(System.String)">
+            <summary>
+            是否大写英文字母
+            </summary>
+            <param name="str">当前字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.StringValidators.ValidatorIsLetterForLower(System.String)">
+            <summary>
+            是否小写英文字母
+            </summary>
+            <param name="str">当前字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.StringValidators.ValidatorIsInteger(System.String)">
+            <summary>
+            是否整数
+            </summary>
+            <param name="str">当前字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.StringValidators.ValidatorIsIntegerForPositive(System.String)">
+            <summary>
+            是否正整数
+            </summary>
+            <param name="str">当前字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.StringValidators.ValidatorIsIntegerForNegtive(System.String)">
+            <summary>
+            是否负整数
+            </summary>
+            <param name="str">当前字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.StringValidators.ValidatorIsIntegerForNonPositive(System.String)">
+            <summary>
+            是否非正整数
+            </summary>
+            <param name="str">当前字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.StringValidators.ValidatorIsIntegerForNonNegtive(System.String)">
+            <summary>
+            是否非负整数
+            </summary>
+            <param name="str">当前字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.StringValidators.ValidatorIsEmail(System.String)">
+            <summary>
+            验证邮箱
+            </summary>
+            <param name="str">当前字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.StringValidators.ValidatorIsIDCard(System.String)">
+            <summary>
+            验证身份证是否有效
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.StringValidators.ValidatorIsIDCard18(System.String)">
+            <summary>
+            是否18位身份证
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.StringValidators.ValidatorIsIDCard15(System.String)">
+            <summary>
+            是否15位身份证
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.StringValidators.ValidatorIsZip(System.String)">
+            <summary>
+            邮政编码 6个数字
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="T:System.Reflection.CreateInstanceHandler">
+            <summary>
+            创建实例处理程序
+            </summary>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="T:System.Reflection.DynamicExecutor">
+            <summary>
+            动态执行
+            </summary>
+        </member>
+        <member name="M:System.Reflection.DynamicExecutor.#ctor(System.Reflection.MethodInfo)">
+            <summary>
+            动态执行
+            </summary>
+            <param name="methodInfo"></param>
+        </member>
+        <member name="M:System.Reflection.DynamicExecutor.Execute(System.Object,System.Object[])">
+            <summary>
+            执行
+            </summary>
+            <param name="instance">实例</param>
+            <param name="parameters">参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Reflection.DynamicExecutor.GetExecuteDelegate(System.Reflection.MethodInfo)">
+            <summary>
+            获取执行委托
+            </summary>
+            <param name="methodInfo">方法信息</param>
+            <returns></returns>
+        </member>
+        <member name="T:System.Reflection.DynamicPropertyAccessor">
+            <summary>
+            动态属性访问器
+            </summary>
+        </member>
+        <member name="M:System.Reflection.DynamicPropertyAccessor.#ctor(System.Reflection.PropertyInfo)">
+            <summary>
+            动态属性访问器
+            </summary>
+            <param name="propertyInfo">属性信息</param>
+        </member>
+        <member name="M:System.Reflection.DynamicPropertyAccessor.#ctor(System.Type,System.String)">
+            <summary>
+            动态属性访问器
+            </summary>
+            <param name="type">类型</param>
+            <param name="propertyName">属性名</param>
+        </member>
+        <member name="M:System.Reflection.DynamicPropertyAccessor.GetValue(System.Object)">
+            <summary>
+            获取值
+            </summary>
+            <param name="o"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Reflection.DynamicPropertyAccessor.prepareForGet">
+            <summary>
+            获取准备
+            </summary>
+        </member>
+        <member name="M:System.Reflection.DynamicPropertyAccessor.prepareForSet">
+            <summary>
+            写入准备
+            </summary>
+        </member>
+        <member name="M:System.Reflection.DynamicPropertyAccessor.SetValue(System.Object,System.Object)">
+            <summary>
+            写入值
+            </summary>
+            <param name="o"></param>
+            <param name="value">值</param>
+        </member>
+        <member name="P:System.Reflection.DynamicPropertyAccessor.Property">
+            <summary>
+            方法
+            </summary>
+        </member>
+        <member name="T:System.Reflection.ObjectFactory">
+            <summary>
+            对象工厂
+            </summary>
+        </member>
+        <member name="M:System.Reflection.ObjectFactory.CreateInstance``1">
+            <summary>
+            创建实例
+            </summary>
+            <typeparam name="T">泛类型</typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:System.Reflection.ObjectFactory.CreateInstance``1(System.Object[])">
+            <summary>
+            创建实例
+            </summary>
+            <typeparam name="T">泛类型</typeparam>
+            <param name="parameters">参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Reflection.ObjectFactory.GetKey(System.Type[])">
+            <summary>
+            获取键
+            </summary>
+            <param name="types"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Reflection.ObjectFactory.GetParameterTypes(System.Object[])">
+            <summary>
+            获取参数类型
+            </summary>
+            <param name="parameters">参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Reflection.ObjectFactory.GetValue(System.Object,System.String)">
+            <summary>
+            获取值
+            </summary>
+            <param name="obj">对象</param>
+            <param name="propertyName">属性名</param>
+            <returns></returns>
+        </member>
+        <member name="T:System.CmjStringExtensions">
+            <summary>
+            string扩展
+            </summary>
+        </member>
+        <member name="M:System.CmjStringExtensions.IsEmpty(System.String)">
+            <summary>
+            字符串是否为Empty
+            </summary>
+            <param name="str">当前字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.CmjStringExtensions.IsNull(System.String)">
+            <summary>
+            字符串是否为Null
+            </summary>
+            <param name="str">当前字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.CmjStringExtensions.IsNullOrEmpty(System.String)">
+            <summary>
+            字符串是否为Empty或Null
+            </summary>
+            <param name="str">当前字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.CmjStringExtensions.FormatWith(System.String,System.Object[])">
+            <summary>
+            字符串格式化
+            </summary>
+            <param name="format">当前字符串</param>
+            <param name="args">参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.CmjStringExtensions.FormatWith(System.String,System.Object)">
+            <summary>
+            字符串格式化
+            </summary>
+            <param name="format">当前字符串</param>
+            <param name="source"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.CmjStringExtensions.FormatWith(System.String,System.IFormatProvider,System.Object)">
+            <summary>
+            字符串格式化
+            </summary>
+            <param name="format">当前字符串</param>
+            <param name="provider"></param>
+            <param name="source"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.CmjStringExtensions.Center(System.String,System.Char,System.Int32)">
+            <summary>
+            当前字符串小于指定长度时，两侧填充指定字符
+            </summary>
+            <param name="str">当前字符串</param>
+            <param name="ch">填充字符</param>
+            <param name="length">指定长度</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.CmjStringExtensions.SafeTrim(System.String,System.Char[])">
+            <summary>
+            去除字符串两侧的空格或指定字符
+            </summary>
+            <param name="str">当前字符串</param>
+            <param name="trimChars">指定字符</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.CmjStringExtensions.SubLeft(System.String,System.Int32)">
+            <summary>
+            截取字符串左侧指定长度的字符
+            </summary>
+            <param name="str">当前字符串</param>
+            <param name="length">截取字符数量</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.CmjStringExtensions.SubLeftBefore(System.String,System.String)">
+            <summary>
+            截取字符串左侧开始匹配字符的 左侧内容
+            </summary>
+            <param name="str">当前字符串</param>
+            <param name="search">匹配字符</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.CmjStringExtensions.SubLeftBefore(System.String,System.String,System.StringComparison)">
+            <summary>
+            根据StringComparison枚举类型截取字符串左侧开始匹配字符的 左侧内容
+            </summary>
+            <param name="str">当前字符串</param>
+            <param name="search">匹配字符</param>
+            <param name="comparisonType">StringComparison枚举类型</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.CmjStringExtensions.SubLeftAfter(System.String,System.String)">
+            <summary>
+            截取字符串 左侧开始匹配字符的 右侧内容
+            </summary>
+            <param name="str">当前字符串</param>
+            <param name="search">匹配字符</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.CmjStringExtensions.SubLeftAfter(System.String,System.String,System.StringComparison)">
+            <summary>
+            根据StringComparison枚举类型截取字符串 左侧开始匹配字符的 右侧内容
+            </summary>
+            <param name="str">当前字符串</param>
+            <param name="search">匹配字符</param>
+            <param name="comparisonType">StringComparison枚举类型</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.CmjStringExtensions.SubRight(System.String,System.Int32)">
+            <summary>
+            截取字符串右侧指定长度的字符
+            </summary>
+            <param name="str">当前字符串</param>
+            <param name="length">指定长度</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.CmjStringExtensions.SubRightBefore(System.String,System.String)">
+            <summary>
+            截取字符串 右侧开始匹配字符的 左侧内容
+            </summary>
+            <param name="str">当前字符串</param>
+            <param name="search">匹配字符</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.CmjStringExtensions.SubRightBefore(System.String,System.String,System.Int32,System.StringComparison)">
+            <summary>
+            根据StringComparison枚举类型截取字符串 右侧开始匹配字符的 左侧内容
+            </summary>
+            <param name="str">当前字符串</param>
+            <param name="search">匹配字符</param>
+            <param name="startIndex">开始位置</param>
+            <param name="comparisonType">StringComparison枚举类型</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.CmjStringExtensions.SubRightAfter(System.String,System.String)">
+            <summary>
+            截取字符串 右侧开始匹配字符的 右侧内容
+            </summary>
+            <param name="str">当前字符串</param>
+            <param name="search">匹配字符</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.CmjStringExtensions.SubRightAfter(System.String,System.String,System.Int32,System.StringComparison)">
+            <summary>
+            根据StringComparison枚举类型截取字符串 右侧开始匹配字符的 右侧内容
+            </summary>
+            <param name="str">当前字符串</param>
+            <param name="search">匹配字符</param>
+            <param name="startIndex">开始位置</param>
+            <param name="comparisonType">StringComparison枚举类型</param>
+            <returns></returns>
+        </member>
+        <member name="T:System.HtmlStringExtensions">
+            <summary>
+            Html字符串处理
+            </summary>
+        </member>
+        <member name="M:System.HtmlStringExtensions.CleanHtml(System.String)">
+            <summary>
+            去除HTML标记
+            </summary>
+            <param name="str">Html内容</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.HtmlStringExtensions.CleanHtmlSubLeft(System.String,System.Int32)">
+            <summary>
+            去除HTML标记并保留指定数量字符
+            </summary>
+            <param name="str">Html内容</param>
+            <param name="limit">保留的字符数量
+            <para>默认30个字符</para></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.HtmlStringExtensions.CleanHtmlSubLeft(System.String,System.String,System.Int32)">
+            <summary>
+            去除HTML标记并保留指定数量字符
+            </summary>
+            <param name="str">Html内容</param>
+            <param name="search"></param>
+            <param name="limit">保留的字符数量
+            <para>默认30个字符</para></param>
+            <returns></returns>
+        </member>
+        <member name="T:System.EncodingExtensions">
+            <summary>
+            Encoding 扩展
+            </summary>
+        </member>
+        <member name="M:System.EncodingExtensions.ToGB2312(System.String)">
+            <summary>
+            字符串编码 转为 GB2312
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.EncodingExtensions.ToGB2312(System.Byte[])">
+            <summary>
+            byte[] 转为 GB2312
+            </summary>
+            <param name="byteArray"></param>
+            <returns></returns>
+        </member>
+        <member name="T:System.StringTransformExtensions">
+            <summary>
+            字符转换扩展
+            </summary>
+        </member>
+        <member name="M:System.StringTransformExtensions.ToHtmlDecode(System.String)">
+            <summary>
+            将已经为 HTTP 传输进行过 HTML 编码的字符串转换为已解码的字符串
+            </summary>
+            <param name="str">当前字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.StringTransformExtensions.ToHtmlEncode(System.String)">
+            <summary>
+            字符串 转换为 HTML 编码的字符串
+            </summary>
+            <param name="str">当前字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.StringTransformExtensions.ToInt(System.String)">
+            <summary>
+            字符串 转换为 整形
+            <para>为空时输出0</para>
+            </summary>
+            <param name="str">当前字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.StringTransformExtensions.ToLong(System.String)">
+            <summary>
+            字符串 转换为 长整形
+            <para>为空时输出0</para>
+            </summary>
+            <param name="str">当前字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.StringTransformExtensions.ToDateTime(System.String)">
+            <summary>
+            字符串 转换为 日期
+            <para>为空时输出当前日期</para>
+            </summary>
+            <param name="str">当前字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.StringTransformExtensions.ToLongArray(System.String)">
+            <summary>
+            字符串 转换为 长整形数组
+            </summary>
+            <param name="str">当前字符串：以英文逗号分割</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.StringTransformExtensions.ToIntArray(System.String)">
+            <summary>
+            字符串 转换为 整形数组
+            </summary>
+            <param name="str">字符串：以英文逗号分割</param>
+            <returns></returns>
+        </member>
+        <member name="T:System.ArrayTransformExtensions">
+            <summary>
+            数组转换扩展
+            </summary>
+        </member>
+        <member name="M:System.ArrayTransformExtensions.ToLongArray(System.String[])">
+            <summary>
+            将 字符串数组 转为 长整形数组
+            </summary>
+            <param name="str">字符串数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.ArrayTransformExtensions.ToIntArray(System.String[])">
+            <summary>
+            将字符串数组 转为 整形数组
+            </summary>
+            <param name="str">字符串数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.ArrayTransformExtensions.ToStringArray(System.Int64[])">
+            <summary>
+            长整形数组 转换为 字符串数组
+            </summary>
+            <param name="str">长整形数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:System.ArrayTransformExtensions.ToStringArray(System.Int32[])">
+            <summary>
+            整形数组 转换为 字符串数组
+            </summary>
+            <param name="str">整形数组</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

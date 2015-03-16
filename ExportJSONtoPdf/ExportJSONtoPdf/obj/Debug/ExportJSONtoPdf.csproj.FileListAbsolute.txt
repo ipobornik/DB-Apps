@@ -1,0 +1,16 @@
+D:\3 TUTORIALS\1_SOFT UNI\Prilojeniq s baza danni mart 2015\TeamWork - Prilojeniq s baza danni\ExportJSONtoPdf\ExportJSONtoPdf\ExportJSONtoPdf\bin\Debug\ExportJSONtoPdf.exe.config
+D:\3 TUTORIALS\1_SOFT UNI\Prilojeniq s baza danni mart 2015\TeamWork - Prilojeniq s baza danni\ExportJSONtoPdf\ExportJSONtoPdf\ExportJSONtoPdf\bin\Debug\ExportJSONtoPdf.exe
+D:\3 TUTORIALS\1_SOFT UNI\Prilojeniq s baza danni mart 2015\TeamWork - Prilojeniq s baza danni\ExportJSONtoPdf\ExportJSONtoPdf\ExportJSONtoPdf\bin\Debug\ExportJSONtoPdf.pdb
+D:\3 TUTORIALS\1_SOFT UNI\Prilojeniq s baza danni mart 2015\TeamWork - Prilojeniq s baza danni\ExportJSONtoPdf\ExportJSONtoPdf\ExportJSONtoPdf\bin\Debug\itextsharp.dll
+D:\3 TUTORIALS\1_SOFT UNI\Prilojeniq s baza danni mart 2015\TeamWork - Prilojeniq s baza danni\ExportJSONtoPdf\ExportJSONtoPdf\ExportJSONtoPdf\bin\Debug\itextsharp.xml
+D:\3 TUTORIALS\1_SOFT UNI\Prilojeniq s baza danni mart 2015\TeamWork - Prilojeniq s baza danni\ExportJSONtoPdf\ExportJSONtoPdf\ExportJSONtoPdf\obj\Debug\ExportJSONtoPdf.csprojResolveAssemblyReference.cache
+D:\3 TUTORIALS\1_SOFT UNI\Prilojeniq s baza danni mart 2015\TeamWork - Prilojeniq s baza danni\ExportJSONtoPdf\ExportJSONtoPdf\ExportJSONtoPdf\obj\Debug\ExportJSONtoPdf.exe
+D:\3 TUTORIALS\1_SOFT UNI\Prilojeniq s baza danni mart 2015\TeamWork - Prilojeniq s baza danni\ExportJSONtoPdf\ExportJSONtoPdf\ExportJSONtoPdf\obj\Debug\ExportJSONtoPdf.pdb
+D:\3 TUTORIALS\1_SOFT UNI\Prilojeniq s baza danni mart 2015\TeamWork - Prilojeniq s baza danni\ExportJSONtoPdf\ExportJSONtoPdf\ExportJSONtoPdf\bin\Debug\Newtonsoft.Json.dll
+D:\3 TUTORIALS\1_SOFT UNI\Prilojeniq s baza danni mart 2015\TeamWork - Prilojeniq s baza danni\ExportJSONtoPdf\ExportJSONtoPdf\ExportJSONtoPdf\bin\Debug\Newtonsoft.Json.xml
+D:\3 TUTORIALS\1_SOFT UNI\Prilojeniq s baza danni mart 2015\TeamWork - Prilojeniq s baza danni\ExportJSONtoPdf\ExportJSONtoPdf\ExportJSONtoPdf\bin\Debug\Cmj.Web.Extensions.dll
+D:\3 TUTORIALS\1_SOFT UNI\Prilojeniq s baza danni mart 2015\TeamWork - Prilojeniq s baza danni\ExportJSONtoPdf\ExportJSONtoPdf\ExportJSONtoPdf\bin\Debug\CmjExtensions.dll
+D:\3 TUTORIALS\1_SOFT UNI\Prilojeniq s baza danni mart 2015\TeamWork - Prilojeniq s baza danni\ExportJSONtoPdf\ExportJSONtoPdf\ExportJSONtoPdf\bin\Debug\Cmj.Web.Extensions.pdb
+D:\3 TUTORIALS\1_SOFT UNI\Prilojeniq s baza danni mart 2015\TeamWork - Prilojeniq s baza danni\ExportJSONtoPdf\ExportJSONtoPdf\ExportJSONtoPdf\bin\Debug\Cmj.Web.Extensions.xml
+D:\3 TUTORIALS\1_SOFT UNI\Prilojeniq s baza danni mart 2015\TeamWork - Prilojeniq s baza danni\ExportJSONtoPdf\ExportJSONtoPdf\ExportJSONtoPdf\bin\Debug\CmjExtensions.pdb
+D:\3 TUTORIALS\1_SOFT UNI\Prilojeniq s baza danni mart 2015\TeamWork - Prilojeniq s baza danni\ExportJSONtoPdf\ExportJSONtoPdf\ExportJSONtoPdf\bin\Debug\CmjExtensions.xml
