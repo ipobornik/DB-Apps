@@ -1,0 +1,12 @@
+D:\SoftUni\Level #3\DB Applications\Teamwork\SuperMarket\SuperMarket.Model\bin\Debug\SuperMarket.Model.dll.config
+D:\SoftUni\Level #3\DB Applications\Teamwork\SuperMarket\SuperMarket.Model\bin\Debug\SuperMarket.Model.dll
+D:\SoftUni\Level #3\DB Applications\Teamwork\SuperMarket\SuperMarket.Model\bin\Debug\SuperMarket.Model.pdb
+D:\SoftUni\Level #3\DB Applications\Teamwork\SuperMarket\SuperMarket.Model\bin\Debug\EntityFramework.dll
+D:\SoftUni\Level #3\DB Applications\Teamwork\SuperMarket\SuperMarket.Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\SoftUni\Level #3\DB Applications\Teamwork\SuperMarket\SuperMarket.Model\bin\Debug\MySql.Data.dll
+D:\SoftUni\Level #3\DB Applications\Teamwork\SuperMarket\SuperMarket.Model\bin\Debug\EntityFramework.xml
+D:\SoftUni\Level #3\DB Applications\Teamwork\SuperMarket\SuperMarket.Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\SoftUni\Level #3\DB Applications\Teamwork\SuperMarket\SuperMarket.Model\obj\Debug\SuperMarket.Model.csprojResolveAssemblyReference.cache
+D:\SoftUni\Level #3\DB Applications\Teamwork\SuperMarket\SuperMarket.Model\obj\Debug\SuperMarket.Model.dll
+D:\SoftUni\Level #3\DB Applications\Teamwork\SuperMarket\SuperMarket.Model\obj\Debug\SuperMarket.Model.pdb
+D:\SoftUni\Level #3\DB Applications\Teamwork\SuperMarket\SuperMarket.Model\bin\Debug\MySql.Data.Entity.EF6.dll

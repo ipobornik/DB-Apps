@@ -1,0 +1,10 @@
+D:\SoftUni\Level #3\DB Applications\Teamwork\MongoDB\bin\Debug\MongoDB.exe.config
+D:\SoftUni\Level #3\DB Applications\Teamwork\MongoDB\obj\Debug\MongoDB.csprojResolveAssemblyReference.cache
+D:\SoftUni\Level #3\DB Applications\Teamwork\MongoDB\bin\Debug\MongoDB.exe
+D:\SoftUni\Level #3\DB Applications\Teamwork\MongoDB\bin\Debug\MongoDB.pdb
+D:\SoftUni\Level #3\DB Applications\Teamwork\MongoDB\bin\Debug\MongoDB.Bson.dll
+D:\SoftUni\Level #3\DB Applications\Teamwork\MongoDB\bin\Debug\MongoDB.Driver.dll
+D:\SoftUni\Level #3\DB Applications\Teamwork\MongoDB\bin\Debug\MongoDB.Bson.xml
+D:\SoftUni\Level #3\DB Applications\Teamwork\MongoDB\bin\Debug\MongoDB.Driver.xml
+D:\SoftUni\Level #3\DB Applications\Teamwork\MongoDB\obj\Debug\MongoDB.exe
+D:\SoftUni\Level #3\DB Applications\Teamwork\MongoDB\obj\Debug\MongoDB.pdb

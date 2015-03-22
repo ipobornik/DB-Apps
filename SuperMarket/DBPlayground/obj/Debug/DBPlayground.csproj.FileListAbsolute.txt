@@ -1,0 +1,16 @@
+D:\SoftUni\Level #3\DB Applications\Teamwork\SuperMarket\DBPlayground\bin\Debug\DBPlayground.exe.config
+D:\SoftUni\Level #3\DB Applications\Teamwork\SuperMarket\DBPlayground\obj\Debug\DBPlayground.csprojResolveAssemblyReference.cache
+D:\SoftUni\Level #3\DB Applications\Teamwork\SuperMarket\DBPlayground\bin\Debug\DBPlayground.exe
+D:\SoftUni\Level #3\DB Applications\Teamwork\SuperMarket\DBPlayground\bin\Debug\DBPlayground.pdb
+D:\SoftUni\Level #3\DB Applications\Teamwork\SuperMarket\DBPlayground\bin\Debug\SuperMarket.Model.dll
+D:\SoftUni\Level #3\DB Applications\Teamwork\SuperMarket\DBPlayground\bin\Debug\SuperMarket.MySQL.dll
+D:\SoftUni\Level #3\DB Applications\Teamwork\SuperMarket\DBPlayground\bin\Debug\MySql.Data.dll
+D:\SoftUni\Level #3\DB Applications\Teamwork\SuperMarket\DBPlayground\bin\Debug\SuperMarket.Model.pdb
+D:\SoftUni\Level #3\DB Applications\Teamwork\SuperMarket\DBPlayground\bin\Debug\SuperMarket.MySQL.pdb
+D:\SoftUni\Level #3\DB Applications\Teamwork\SuperMarket\DBPlayground\obj\Debug\DBPlayground.exe
+D:\SoftUni\Level #3\DB Applications\Teamwork\SuperMarket\DBPlayground\obj\Debug\DBPlayground.pdb
+D:\SoftUni\Level #3\DB Applications\Teamwork\SuperMarket\DBPlayground\bin\Debug\EntityFramework.dll
+D:\SoftUni\Level #3\DB Applications\Teamwork\SuperMarket\DBPlayground\bin\Debug\EntityFramework.SqlServer.dll
+D:\SoftUni\Level #3\DB Applications\Teamwork\SuperMarket\DBPlayground\bin\Debug\MySql.Data.Entity.EF6.dll
+D:\SoftUni\Level #3\DB Applications\Teamwork\SuperMarket\DBPlayground\bin\Debug\EntityFramework.xml
+D:\SoftUni\Level #3\DB Applications\Teamwork\SuperMarket\DBPlayground\bin\Debug\EntityFramework.SqlServer.xml
